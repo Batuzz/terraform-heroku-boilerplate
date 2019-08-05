@@ -7,7 +7,7 @@ variable "application_name" {
 variable "env_vars" {
   type        = map(string)
   default     = {}
-  description = "Environment variables map. e.g. {'NODE_ENC': 'DEVELOPMENT'}"
+  description = "Environment variables map. e.g. {'NODE_ENV': 'DEVELOPMENT'}"
 }
 
 variable "region" {
