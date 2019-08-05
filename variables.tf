@@ -3,10 +3,22 @@ variable "application_name" {
   description = "Name of the application"
 }
 
-variable "env_vars" {
+variable "production_vars" {
   type        = map(string)
   default     = {}
-  description = "Environment variables map. e.g. {'NODE_ENV': 'DEVELOPMENT'}"
+  description = "Environment variables for production environment. e.g. {'NODE_ENV': 'DEVELOPMENT'}"
+}
+
+variable "staging_vars" {
+  type        = map(string)
+  default     = {}
+  description = "Environment variables for staging environment. e.g. {'NODE_ENV': 'DEVELOPMENT'}"
+}
+
+variable "development_vars" {
+  type        = map(string)
+  default     = {}
+  description = "Environment variables for development environment. e.g. {'NODE_ENV': 'DEVELOPMENT'}"
 }
 
 variable "region" {
