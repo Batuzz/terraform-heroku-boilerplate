@@ -1,6 +1,5 @@
 variable "application_name" {
   type        = string
-  default     = ""
   description = "Name of the application"
 }
 
